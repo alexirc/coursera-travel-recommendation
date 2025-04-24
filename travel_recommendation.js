@@ -21,7 +21,7 @@
             
             card.innerHTML = `
                 <div class="card-image">
-                    <span>Image</span>
+                    <image src="./${item.imageUrl}"/>
                 </div>
                 <div class="card-content">
                     <span class="card-category">${category}</span>
@@ -112,6 +112,7 @@
                         results.push({
                             item: beach,
                             category: 'Beach'
+                        
                         });
                     }
                 });
