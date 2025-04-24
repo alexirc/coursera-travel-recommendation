@@ -21,7 +21,7 @@
             
             card.innerHTML = `
                 <div class="card-image">
-                    <image src="./${item.imageUrl}"/>
+                    <image src="./${item.imageUrl}" width:"100"/>
                 </div>
                 <div class="card-content">
                     <span class="card-category">${category}</span>
