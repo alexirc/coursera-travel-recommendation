@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dream Travel</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+    <header class="bg-blue-500 shadow-md rounded-b-lg">
+        <div class="container">
+            <div class="logo">
+                Dream travel
+            </div>
+            <nav class="md-flex">
+                <a href="#home">Home</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+            </nav>
+            <div class="flex items-center">
+                <div class="relative mr-2">
+                    <input type="text" id="search-input" placeholder="Explore now..." />
+                    <div class="results-dropdown" id="resultsDropdown">
+                        <!-- Cards will be dynamically inserted here -->
+                    </div>
+                    <button id="search-button">
+                        Explore
+                    </button>
+                </div>
+                <button id="clear-button">
+                    Clear
+                </button>
+            </div>
+            <div class="md-hidden">
+                <button id="hamburger-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hidden">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <h1>EXPLORE YOUR NEXT DREAM DESTINATION</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures ans landscapes, while persuing the desire destination that captives the heart and ignites a sense of wonder</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">EXPLORE NOW</button>
+        </section>
+
+        <section id="about-us" class="about-us-section">
+            <h2>About Us</h2>
+            <p>We believe that travel is for everyone. It helps us learn about ourselves and the world around us.
+
+                Our goal is to help more people from more backgrounds experience the joy of exploration. Because we believe this builds a kinder, more inclusive, more open-minded world.</p>
+            <div class="our-team">
+                <div class="team-member">
+                    <img src="https://placehold.co/250x250/EEE/31343C" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://placehold.co/250x250/EEE/31343C" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://placehold.co/250x250/EEE/31343C" alt="Team Member 3">
+                    <h3>Mike Johnson</h3>
+                    <p>Marketing Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="contact-us-section">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or questions.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Main St, Anytown, USA</p>
+            </div>
+        </section>
+        <div class="close-dropdown" id="closeDropdown"></div>
+    </main>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
