@@ -21,7 +21,7 @@
             
             card.innerHTML = `
                 <div class="card-image">
-                    <span><image src="./${item.imageUrl}"/></span>
+                    <span><image src="./${item.imageUrl}" style="width: 100%;object-fit: cover;height: 100%;"/></span>
                 </div>
                 <div class="card-content">
                     <span class="card-category">${category}</span>
